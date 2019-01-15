@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('No-op') {
+        stage('input required') {
             steps {
                 sh 'ls'
             }
