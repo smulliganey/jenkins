@@ -9,7 +9,7 @@ pipeline {
         stage('Sanity check') {
             steps {
                 input "Does the staging environment look ok?"
-                echo "Trying to change"
+                echo "Change propogation check"
             }
         }
     }
