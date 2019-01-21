@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('input required') {
             steps {
-                sh 'find .'
+                sh 'cd ../ && find .'
             }
         }
         stage('Sanity check') {
