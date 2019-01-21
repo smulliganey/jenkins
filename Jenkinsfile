@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('input required') {
             steps {
-                sh ./startup.sh
+                sh './startup.sh'
             }
         }
         stage('Sanity check') {
