@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('input required') {
             steps {
-                sh 'ls'
+                sh '-R | grep "^[.]/" | sed -e "s/:$//" -e "s/[^/]*[/]/--/g" -e "s/^/   |/"'
             }
         }
         stage('Sanity check') {
