@@ -15,7 +15,7 @@ pipeline {
     }
     post {
         always {
-            
+            sh 'echo "This always prints"'
         }
     }
 }
